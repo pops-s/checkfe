@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bebasthapan ERP System for Nepal Businesses | Accounting, Inventory, Sales & CRM</title>
+    <meta
+      name="description"
+      content="Bebasthapan is an ERP system for Nepal businesses that need accounting, inventory, sales, purchase, CRM, invoices, attendance, HR, and business insights in one platform. Try the beta free for 10 days."
+    />
+    <meta
+      name="keywords"
+      content="Bebasthapan, Bebasthapan ERP system for Nepal businesses, ERP software Nepal, business ERP system Nepal, accounting software Nepal, inventory management software Nepal, sales tracking software Nepal, CRM software Nepal, HR attendance software, invoices, distribution management software, small business ERP"
+    />
+    <meta name="author" content="Bebasthapan" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <link rel="canonical" href="https://bebasthapan.com/home" />
+
+    <!-- PWA Core -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <!-- Icons -->
+    <link rel="icon" href="/images/logo.png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Bebasthapan" />
+    <meta property="og:title" content="Bebasthapan ERP System for Nepal Businesses" />
+    <meta property="og:description" content="Run accounting, inventory, sales, purchase, CRM, invoices, attendance, HR, and business intelligence from one connected ERP platform. Beta testing is open with a 10-day free trial." />
+    <meta property="og:url" content="https://bebasthapan.com/home" />
+    <meta property="og:image" content="https://bebasthapan.com/icons/icon-512x512.png" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bebasthapan ERP System for Nepal Businesses" />
+    <meta name="twitter:description" content="Connected ERP software for Nepal businesses: accounting, inventory, sales, purchase, CRM, invoices, HR, attendance, and AI insights." />
+    <meta name="twitter:image" content="https://bebasthapan.com/icons/icon-512x512.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://bebasthapan.com/#organization",
+            "name": "Bebasthapan",
+            "url": "https://bebasthapan.com/",
+            "logo": "https://bebasthapan.com/icons/icon-512x512.png",
+            "email": "prashantpoudel745@gmail.com",
+            "telephone": "+9779869891980",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Kathmandu",
+              "addressCountry": "NP"
+            },
+            "sameAs": [
+              "https://bebasthapan.com/"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://bebasthapan.com/#website",
+            "url": "https://bebasthapan.com/",
+            "name": "Bebasthapan",
+            "publisher": {
+              "@id": "https://bebasthapan.com/#organization"
+            },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://bebasthapan.com/#software",
+            "name": "Bebasthapan ERP",
+            "alternateName": "Bebasthapan ERP System for Nepal Businesses",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "url": "https://bebasthapan.com/home",
+            "description": "Bebasthapan is a business ERP system for Nepal businesses, combining accounting, inventory management, sales, purchase, CRM, invoices, HR, attendance, and AI-powered business insights.",
+            "featureList": [
+              "Accounting and financial reports",
+              "Inventory and stock management",
+              "Sales invoices, quotations, orders, and customer payments",
+              "Purchase bills, supplier payments, and expenses",
+              "CRM and customer due tracking",
+              "Employee attendance and HR operations",
+              "Business intelligence and AI insights"
+            ],
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "NPR",
+              "availability": "https://schema.org/InStock",
+              "url": "https://bebasthapan.com/contact-sales"
+            },
+            "publisher": {
+              "@id": "https://bebasthapan.com/#organization"
+            }
+          }
+        ]
+      }
+    </script>
+
+    <style>
+      #install-btn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #4a90e2;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 16px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+      }
+      #install-btn:hover {
+        background-color: #357ab8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- Install App Button -->
+    <!-- <button id="install-btn">Install App</button> -->
+
+    <!-- React App -->
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- PWA Installation & Service Worker -->
+    <!-- <script>
+      // Register Service Worker
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/sw.js");
+        });
+      }
+
+      // Handle Install Prompt
+      let deferredPrompt;
+      const installBtn = document.getElementById("install-btn");
+
+      window.addEventListener("beforeinstallprompt", (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        if (installBtn) {
+          installBtn.style.display = "block";
+        }
+      });
+
+      installBtn?.addEventListener("click", () => {
+        if (deferredPrompt) {
+          deferredPrompt.prompt();
+          deferredPrompt.userChoice.then((choiceResult) => {
+            deferredPrompt = null;
+            installBtn.style.display = "none";
+          });
+        }
+      });
+    </script> -->
+  </body>
+</html>
